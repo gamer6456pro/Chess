@@ -11,7 +11,7 @@ placeholder
 [knight](#night)
 [queen](#queen)
 
-[king](##king)
+[king](#king)
 
 [piece class](#header)
 
