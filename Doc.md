@@ -10,25 +10,25 @@ The board is represented by a 2d array that goes y,x
 &nbsp;&nbsp;&nbsp;&nbsp;[Insufficient Material](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#insufficientmaterial)\
 &nbsp;&nbsp;&nbsp;&nbsp;[EndOfGame](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#endofgame)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Resign](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#resign)\
-[Piece Class](#Piece&nbsp;Class)\
-&nbsp;&nbsp;&nbsp;&nbsp;[pawn](#pawn)\
-&nbsp;&nbsp;&nbsp;&nbsp;[rook](#rook)\
-&nbsp;&nbsp;&nbsp;&nbsp;[bishop](#bishop)\
-&nbsp;&nbsp;&nbsp;&nbsp;[knight](#knight)\
-&nbsp;&nbsp;&nbsp;&nbsp;[queen](#queen)\
-&nbsp;&nbsp;&nbsp;&nbsp;[king](#king)\
-&nbsp;&nbsp;&nbsp;&nbsp;[check](#check)\
-&nbsp;&nbsp;&nbsp;&nbsp;[castle](#castle)\
-[Misc Funcs](#Misc&nbsp;Funcs)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Setup Board](#Setu&nbsp;Board)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Load Image](#Load&nbsp;Image)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Alternate Color](#Alternate&nbsp;Color)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Create Object](#Create&nbsp;Object)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Increment Move 50 rule](#IncrementMove50Rule)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Repetition](#Repetition)\
-&nbsp;&nbsp;&nbsp;&nbsp;[EnemyGenerator](#EnemyGenerator)\
-&nbsp;&nbsp;&nbsp;&nbsp;[EnemyMoves](#EnemyMoves)\
-[Notes and tips](#Notes&nbsp;and&nbsp;tips)
+[Piece Class](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#piececlass)\
+&nbsp;&nbsp;&nbsp;&nbsp;[pawn](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#pawn)\
+&nbsp;&nbsp;&nbsp;&nbsp;[rook](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#rook)\
+&nbsp;&nbsp;&nbsp;&nbsp;[bishop](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#bishop)\
+&nbsp;&nbsp;&nbsp;&nbsp;[knight](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#knight)\
+&nbsp;&nbsp;&nbsp;&nbsp;[queen](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#queen)\
+&nbsp;&nbsp;&nbsp;&nbsp;[king](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#king)\
+&nbsp;&nbsp;&nbsp;&nbsp;[check](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#check)\
+&nbsp;&nbsp;&nbsp;&nbsp;[castle](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#castle)\
+[Misc Funcs](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#miscfuncs)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Setup Board](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#setupboard)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Load Image](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#loadimage)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Alternate Color](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#alternatecolor)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Create Object](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#createobject)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Increment Move 50 rule](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#incrementmove50rule)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Repetition](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#repetition)\
+&nbsp;&nbsp;&nbsp;&nbsp;[EnemyGenerator](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#enemygenerator)\
+&nbsp;&nbsp;&nbsp;&nbsp;[EnemyMoves](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#enemymoves)\
+[Notes and tips](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#notesandtips)
 
 # Game&nbsp;Class
 Handles drawing, making the moves, and ending the game
