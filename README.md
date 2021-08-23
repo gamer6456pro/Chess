@@ -3,14 +3,14 @@ placeholder
 ## table of contents
 [Game Class](#Game_Class)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Board](#Draw_Board)\
-    [Draw Piece](#Draw_Piece)
-    [Domove](#Domove)
-    [Promotion](#Promotion)
-    [Checkmate](#Checkmate)
-    [Stalemate](#Stalemate)
-    [Insufficient Material](#Insufficient_Material)
-    [EndOfGame](#EndOfGame)
-    [Resign](#Resign) 
+&nbsp;&nbsp;&nbsp;&nbsp;[Draw Piece](#Draw_Piece)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Domove](#Domove)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Promotion](#Promotion)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Checkmate](#Checkmate)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Stalemate](#Stalemate)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Insufficient Material](#Insufficient_Material)\
+&nbsp;&nbsp;&nbsp;&nbsp;[EndOfGame](#EndOfGame)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Resign](#Resign)
 ***
 [Piece Class](#Piece Class)
     [pawn](#pawn)
