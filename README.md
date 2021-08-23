@@ -1,7 +1,7 @@
 First large project. Hopefully helps other beginners includes a doc explaining. 
 placeholder
 ## table of contents
-[Game Class](#Game Class)
+[Game Class](#GameClass)
     [Draw Board](#Draw Board)\
     [Draw Piece](#Draw Piece)\
     [Domove](#Domove)\
