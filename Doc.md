@@ -1,3 +1,4 @@
+The board is represented by a 2d array that goes y,x
 # Table of Contents
 [Game Class](#Game&nbsp;Class)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Board](#Draw&nbsp;Board)\
@@ -40,8 +41,16 @@ counter=0
                     pygame.draw.rect(window,LightColor,(x*100,y*100,100,100))
                 else:
                     pygame.draw.rect(window,DarkColor,(x*100,y*100,100,100))
-                counter+=1```
+                counter+=1
+```
+Uses some math to draw the squares to create an alternating pattern. Does not draw pieces
 ## Draw&nbsp;Piece
+Loops through the Board blits the pieces out
+```python 
+ImageCenter=self.ImageDict[y].get_rect()
+                    ImageCenter.center=(100*j+50,100*i+50)
+                    window.blit(self.ImageDict[y],ImageCenter)
+```
 ## Domove
 ## Promotion
 ## Checkmate
