@@ -31,6 +31,7 @@ First large project. Hopefully helps other beginners includes a doc explaining.
 [Notes and tips](#Notes&nbsp;and&nbsp;tips)
 
 # Game&nbsp;Class
+Handles drawing, making the moves, and ending the game
 ## Draw&nbsp;Board
 ## Draw&nbsp;Piece
 ## Domove
