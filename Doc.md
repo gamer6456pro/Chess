@@ -1,4 +1,6 @@
-The board is represented by a 2d array that goes y,x
+# General Explination
+The program uses the methods in the Piece class to generate moves and store them in PossibleMoves which is then fed into other funcs that then make the move/check legality.
+To detect checkmate and other positions it loops through the whole board and checks for certain conditions. The board is represented by a 2d array that goes y,x
 # Table of Contents
 [Game Class](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#gameclass)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Board](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#drawboard)\
@@ -107,27 +109,80 @@ pieceDict={'n':ThePiece.knights(board=CopyOfBoard),'b':ThePiece.bishop(board=Cop
 ## Stalemate
 Uses EnemyMoves and then compares all the generated moves and removes them if they are in the EnemyMoves. So if all the pieces have empty lists(moves) then it is stalemate
 ## Insufficient&nbsp;Material
-
+Uses a dict to count how many bishops and knights are in the position and then uses some if statements to decide if there is insufficient material. If anything besides bishops and knights are found, it returns False
 ## EndOfGame
+A func to print text and provide a restart and quit system. Is called after any game ender ex: checkmate,stalemate
 ## Resign
+Allows the user to resign at any point in the game
 # Piece&nbsp;Class
+Handles move generation including castle and enpassant and contains the check func
 ## pawn
+Generates the moves for the pawn and calls the enpassant func to add to possible moves
 ## rook
+Generates moves for rook
 ## bishop
+Generates moves for bishop
 ## knight
+Generates moves for knight
 ## queen
+Generates moves for queen
 ## king
+Generates moves for king and calls castle to add to possible moves
 ## check
+Takes a enemy Object, Board, and the king coords for both sides and then runs all the enemy possible moves and checks if the king coords are in those. If so, return True
 ## castle
+Checks all the conditions for castle. If they are met, return True
 # Misc&nbsp;Funcs
+Some utilities/other game enders
 ## Setup&nbsp;Board
+Sets up the board by setting down the pieces
 ## Load&nbsp;Image
+Loads all the images needed. Did this to pack everything together
 ## Alternate&nbsp;Color
+Returns the opposite color based on turn. Useful for finding enemies
 ## Create&nbsp;Object
+Creates an object for domove
 ## IncrementMove50Rule
+Uses map with a custom func to find if a pawn has moved based on the previous pos. 
+```python
+try:
+            if OldBoard[1]=='p' and CurrentBoard==' ':
+                return True
+        except IndexError:
+            return False
+    for x,y in zip(previousBoard,Board):
+        PawnMove=list(map(Match,x,y))
+        if True in PawnMove:
+            CounterMove50rule=0
+            return False
+```
+Then checks if the same number of pieces are equal in both pos. If so, it adds one to the counter
 ## Repetition
+Stores the previous pos in a dict and then adds one each time it appears. For the castle and enpassant it adds them as strings to end of the key
+```python
+Pos=''
+    for x in Board:
+        TempPos=''.join(x)
+        Pos+=TempPos
+    if EnpassantInPos:
+        Pos+='EnPassant'
+    for x in RookMoved:
+        Pos+=str(x)
+    try:
+        RepetitionCounter[Pos]+=1
+        if 3 in RepetitionCounter.values():
+            return True
+    except KeyError:
+        RepetitionCounter[Pos]=1
+    return None
+```
 ## EnemyGenerator
+A generator that yields enemy objects. Useful for the check func and checkmate
 ## EnemyMoves
+Uses the EnemyGenerator to then generate their moves. Used in stalemate
 # Notes&nbsp;and&nbsp;tips
-Notes:        #also could optimize this by clearing the dict when a piece is captured but too lazy so have to sacrifice cpu by adding this
-        #but it saves memory
+In line 127: Theres prob a way to save memory by clearing the dict whenever a capture occurs
+In line 457: There was a bug when starting a new game with the piece methods not updating the board=Board keyword arg, so if this occurs to you try to use .clear() instead of setting the variable back to an empty list
+
+
+        the queen func didn't feed the args into the hcildrne
