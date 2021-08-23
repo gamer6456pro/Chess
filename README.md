@@ -22,7 +22,7 @@ placeholder
 &nbsp;&nbsp;&nbsp;&nbsp;[check](#check)\
 &nbsp;&nbsp;&nbsp;&nbsp;[castle](#castle)\
 
-&nbsp;&nbsp;&nbsp;&nbsp;[Misc Funcs](#Misc Funcs)\
+[Misc Funcs](#Misc_Funcs)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Setup Board](#Setup Board)\
    [
 
