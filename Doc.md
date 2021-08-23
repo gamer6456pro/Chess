@@ -3,13 +3,13 @@ The board is represented by a 2d array that goes y,x
 [Game Class](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#gameclass)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Board](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#drawboard)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Piece](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#drawpiece)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Domove](#Domove)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Promotion](#Promotion)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Checkmate](#Checkmate)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Stalemate](#Stalemate)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Insufficient Material](#Insufficient&nbsp;Material)\
-&nbsp;&nbsp;&nbsp;&nbsp;[EndOfGame](#EndOfGame)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Resign](#Resign)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Domove](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#domove)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Promotion](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#promotion)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Checkmate](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#checkmate)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Stalemate](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#stalemate)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Insufficient Material](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#insufficientmaterial)\
+&nbsp;&nbsp;&nbsp;&nbsp;[EndOfGame](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#endofgame)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Resign](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#resign)\
 [Piece Class](#Piece&nbsp;Class)\
 &nbsp;&nbsp;&nbsp;&nbsp;[pawn](#pawn)\
 &nbsp;&nbsp;&nbsp;&nbsp;[rook](#rook)\
