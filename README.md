@@ -1,6 +1,6 @@
 First large project. Hopefully helps other beginners includes a doc explaining. 
 # Table of Contents
-[Game Class](#Game_Class)\
+[Game Class](#Game&nbsp;Class)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Board](#Draw_Board)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Piece](#Draw_Piece)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Domove](#Domove)\
@@ -30,7 +30,7 @@ First large project. Hopefully helps other beginners includes a doc explaining.
 &nbsp;&nbsp;&nbsp;&nbsp;[EnemyMoves](#EnemyMoves)\
 [Notes and tips](#Notes_and_tips)
 
-#Game_Class
+#Game&nbsp;Class
 
 # Notes-and-tips
 Notes:        #also could optimize this by clearing the dict when a piece is captured but too lazy so have to sacrifice cpu by adding this
