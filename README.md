@@ -20,11 +20,17 @@ placeholder
 &nbsp;&nbsp;&nbsp;&nbsp;[queen](#queen)\
 &nbsp;&nbsp;&nbsp;&nbsp;[king](#king)\
 &nbsp;&nbsp;&nbsp;&nbsp;[check](#check)\
-&nbsp;&nbsp;&nbsp;&nbsp;[castle](#castle)\
+&nbsp;&nbsp;&nbsp;&nbsp;[castle](#castle)
 
 [Misc Funcs](#Misc_Funcs)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Setup Board](#Setup Board)\
-   [
+&nbsp;&nbsp;&nbsp;&nbsp;[Load Image](#Load_Image)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Alternate Color](#Alternate_Color)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Create Object](#Create_Object)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Increment Move 50 rule](#IncrementMove50Rule)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Repetition](#Repetition)\
+&nbsp;&nbsp;&nbsp;&nbsp;[EnemyGenerator](#EnemyGenerator)\
+&nbsp;&nbsp;&nbsp;&nbsp;[EnemyMoves](#EnemyMoves)
 
 
 
