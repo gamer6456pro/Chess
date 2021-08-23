@@ -2,10 +2,10 @@ First large project. Hopefully helps other beginners includes a doc explaining.
 placeholder
 ## table of contents
 [Game Class](#Game_Class)\
-    [Draw Board](#Draw_Board)\
+‎‎[Draw Board](#Draw_Board)\
     [Draw Piece](#Draw_Piece)\
     [Domove](#Domove)\
-    [Promotion](#Promotion)\ 
+    [Promotion](#Promotion)\
     [Checkmate](#Checkmate)\
     [Stalemate](#Stalemate)\
     [Insufficient Material](#Insufficient_Material)\
