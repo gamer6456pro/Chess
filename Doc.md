@@ -1,7 +1,7 @@
 The board is represented by a 2d array that goes y,x
 # Table of Contents
 [Game Class](#Game&nbsp;Class)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Draw&nbsp;Board](##Draw&nbsp;Board)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Draw Board](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#drawboard)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Piece](#Draw&nbsp;Piece)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Domove](#Domove)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Promotion](#Promotion)\
