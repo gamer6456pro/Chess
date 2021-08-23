@@ -52,8 +52,37 @@ ImageCenter=self.ImageDict[y].get_rect()
                     window.blit(self.ImageDict[y],ImageCenter)
 ```
 ## Domove
+```python
+ PieceDict={'p':PieceObject.pawns(captureSameColor=True),'n':PieceObject.knights(captureSameColor=True),
+        'q':PieceObject.queen(captureSameColor=True),'k':PieceObject.king(captureSameColor=True,castle=True),
+        'r':PieceObject.rook(captureSameColor=True),'b':PieceObject.bishop(captureSameColor=True)}
+```
+This dict stores all the moves that the piece can make and selects one based on what type of piece the player clicks on
+After this the func highlights the square that was clicked on and highlights all the squares based on the dict. Moves are represented by strings and a (y,x) coord system
+so '04' would be the black king at the start of the game.
+After it does that it detects the second click where it then runs the check func in the Piece class by feeding it a copy of the board and then checking if that pos leads to check
+```python
+CopyOfBoard=copy.deepcopy(Board)
+                            CopyOfBoard[endy][endx]=CopyOfBoard[starty][startx]
+                            CopyOfBoard[starty][startx]=' '
+                            for i,x in enumerate(CopyOfBoard):
+                                for j,y in enumerate(x):
+                                    if y=='bk':
+                                        BlackKingCoords=str(i)+str(j)
+                                        break
+                                    elif y=='wk':
+                                        WhiteKingCoords=str(i)+str(j)
+                            KingCoords={'b':BlackKingCoords,'w':WhiteKingCoords}
+                            for Enemy in EnemyGenerator(CopyOfBoard):
+                                if PieceObject.check(Enemy,CopyOfBoard,KingCoords):
+                                    return 'check'
+```
+If the pos is not in check, then it checks if castle or enpassant occured. If so, it moves the rook for castle and removes the enemy pawn for enpassant
+After that it sets the second click of the user equal to the beginning effectively moving the piece
 ## Promotion
+This runs after the domove func and checks if a pawn is at their respective end. If so, it runs a loop to check for user input and then sets the coords to whatever the user promoted too
 ## Checkmate
+
 ## Stalemate
 ## Insufficient&nbsp;Material
 ## EndOfGame
