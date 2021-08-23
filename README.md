@@ -30,7 +30,16 @@ First large project. Hopefully helps other beginners includes a doc explaining.
 &nbsp;&nbsp;&nbsp;&nbsp;[EnemyMoves](#EnemyMoves)\
 [Notes and tips](#Notes&nbsp;and&nbsp;tips)
 
-#Game&nbsp;Class
+# Game&nbsp;Class
+## Draw&nbsp;Board
+## Draw&nbsp;Piece
+## Domove
+## Promotion
+## Checkmate
+## Stalemate
+## Insufficient&nbsp;Material
+## EndOfGame
+## Resign
 
 # Notes&nbsp;and&nbsp;tips
 Notes:        #also could optimize this by clearing the dict when a piece is captured but too lazy so have to sacrifice cpu by adding this
