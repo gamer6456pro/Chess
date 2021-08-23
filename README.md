@@ -1,5 +1,4 @@
 First large project. Hopefully helps other beginners includes a doc explaining. 
-placeholder
 # Table of Contents
 [Game Class](#Game_Class)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Board](#Draw_Board)\
