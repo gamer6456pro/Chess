@@ -1,4 +1,4 @@
 # Chess
-First large project. Hopefully helps other beginners. 
+First large project. Hopefully helps other beginners includes a doc explaining. 
 placeholder
 
