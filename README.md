@@ -1,16 +1,16 @@
 First large project. Hopefully helps other beginners includes a doc explaining. 
 placeholder
 ## table of contents
-[Game Class](#GameClass)
-    [Draw Board](#Draw Board)\
-    [Draw Piece](#Draw Piece)\
+[Game Class](#Game_Class)
+    [Draw Board](#Draw_Board)\
+    [Draw Piece](#Draw_Piece)\
     [Domove](#Domove)\
     [Promotion](#Promotion)\
     [Checkmate](#Checkmate)\
     [Stalemate](#Stalemate)\
-    [Insufficient Material](#Insufficient Material)\
+    [Insufficient Material](#Insufficient_Material)\
     [EndOfGame](#EndOfGame)\
-    [Resign](#Resign)\ 
+    [Resign](#Resign) 
 ***
 [Piece Class](#Piece Class)
     [pawn](#pawn)
