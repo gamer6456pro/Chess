@@ -4,13 +4,13 @@ placeholder
 ### [Game Class](## Game Class)
 
 ***
-### [Piece Class](##Piece Class)
-#### [pawn](### pawn)
-#### [rook](### rook)
-#### [bishop](### bishop)
-#### [knight](### knight)
-#### [queen](### queen)
-#### [king](### king)
+[Piece Class](##Piece Class)
+[pawn](### pawn)
+[rook](### rook)
+[bishop](### bishop)
+[knight](### knight)
+[queen](### queen)
+[king](### king)
 
 [piece class](#header)
 
