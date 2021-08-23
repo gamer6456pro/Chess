@@ -1,9 +1,9 @@
 First large project. Hopefully helps other beginners includes a doc explaining. 
 placeholder
 ## table of contents
-[Game_Class](#Game Class)
-    [Draw Board](#Draw Board)
-    [Draw Piece](#Draw Piece)
+[GameClass](#Game Class)
+    [DrawBoard](#Draw Board)
+    [DrawPiece](#Draw Piece)
     [Domove](#Domove)
     [Promotion](#Promotion)
     [Checkmate](#Checkmate)
