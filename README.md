@@ -26,6 +26,20 @@ Notes:        #also could optimize this by clearing the dict when a piece is cap
 
 
 
+a
+
+
+a
+
+
+a
+
+
+
+
+
+
+a
 
 
 
@@ -37,21 +51,7 @@ Notes:        #also could optimize this by clearing the dict when a piece is cap
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+a
 
 
 ## king
