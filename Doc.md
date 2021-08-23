@@ -82,9 +82,32 @@ After that it sets the second click of the user equal to the beginning effective
 ## Promotion
 This runs after the domove func and checks if a pawn is at their respective end. If so, it runs a loop to check for user input and then sets the coords to whatever the user promoted too
 ## Checkmate
-
+Runs in the main game loop works similarly to the domove check part except this loops through all possible moves
+```python
+pieceDict={'n':ThePiece.knights(board=CopyOfBoard),'b':ThePiece.bishop(board=CopyOfBoard),
+                        'q':ThePiece.queen(board=CopyOfBoard),'p':ThePiece.pawns(board=CopyOfBoard),
+                        'r':ThePiece.rook(board=CopyOfBoard),'k':ThePiece.king(board=CopyOfBoard)}
+                        for z in pieceDict[y[1]]:
+                            CopyOfBoard[int(z[0])][int(z[1])]=y
+                            CopyOfBoard[i][j]=' '
+                            for i,x in enumerate(CopyOfBoard):
+                                for j,y in enumerate(x):
+                                    if y=='bk':
+                                        BlackKingCoords=str(i)+str(j)
+                                        break
+                                    elif y=='wk':
+                                        WhiteKingCoords=str(i)+str(j)
+                            KingCoords={'b':BlackKingCoords,'w':WhiteKingCoords}
+                            for Enemy in EnemyGenerator(CopyOfBoard):
+                                if ThePiece.check(Enemy,CopyOfBoard,KingCoords):
+                                    isCheckMate=True
+                                CopyOfBoard[int(z[0])][int(z[1])]=' '
+                                CopyOfBoard[i][j]=y
+```
 ## Stalemate
+Uses EnemyMoves and then compares all the generated moves and removes them if they are in the EnemyMoves. So if all the pieces have empty lists(moves) then it is stalemate
 ## Insufficient&nbsp;Material
+
 ## EndOfGame
 ## Resign
 # Piece&nbsp;Class
