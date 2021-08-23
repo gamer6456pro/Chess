@@ -1,7 +1,7 @@
 First large project. Hopefully helps other beginners includes a doc explaining. 
 placeholder
 ## table of contents
-### [Game Class](## Game Class)
+[Game Class](## Game Class)
 
 ***
 [Piece Class](##Piece Class)
@@ -10,7 +10,8 @@ placeholder
 [bishop](### bishop)
 [knight](### knight)
 [queen](### queen)
-[king](### king)
+
+[king](#king)
 
 [piece class](#header)
 
