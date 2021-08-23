@@ -32,6 +32,15 @@
 # Game&nbsp;Class
 Handles drawing, making the moves, and ending the game
 ## Draw&nbsp;Board
+```python
+counter=0
+        for y in range(8):
+            for x in range(8):
+                if counter%2==y%2:
+                    pygame.draw.rect(window,LightColor,(x*100,y*100,100,100))
+                else:
+                    pygame.draw.rect(window,DarkColor,(x*100,y*100,100,100))
+                counter+=1```
 ## Draw&nbsp;Piece
 ## Domove
 ## Promotion
