@@ -11,7 +11,7 @@ placeholder
 [knight](#night)
 [queen](#queen)
 
-[king](#king)
+[king](##king)
 
 [piece class](#header)
 
@@ -19,3 +19,7 @@ placeholder
 # header
 Notes:        #also could optimize this by clearing the dict when a piece is captured but too lazy so have to sacrifice cpu by adding this
         #but it saves memory
+#king
+
+
+##king
