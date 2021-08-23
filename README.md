@@ -22,4 +22,36 @@ Notes:        #also could optimize this by clearing the dict when a piece is cap
 # king
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## king
