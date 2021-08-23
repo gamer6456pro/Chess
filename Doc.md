@@ -183,6 +183,6 @@ Uses the EnemyGenerator to then generate their moves. Used in stalemate
 # Notes&nbsp;and&nbsp;tips
 In line 127: Theres prob a way to save memory by clearing the dict whenever a capture occurs
 In line 457: There was a bug when starting a new game with the piece methods not updating the board=Board keyword arg, so if this occurs to you try to use .clear() instead of setting the variable back to an empty list
-
+In general: Make sure that when generating moves try to avoid index errors or maybe catching and ignoring them works
 
         the queen func didn't feed the args into the hcildrne
