@@ -1,8 +1,8 @@
 The board is represented by a 2d array that goes y,x
 # Table of Contents
-[Game Class](#Game&nbsp;Class)\
+[Game Class](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#gameclass)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Draw Board](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#drawboard)\
-&nbsp;&nbsp;&nbsp;&nbsp;[Draw Piece](#Draw&nbsp;Piece)\
+&nbsp;&nbsp;&nbsp;&nbsp;[Draw Piece](https://github.com/gamer6456pro/Chess/blob/main/Doc.md#drawpiece)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Domove](#Domove)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Promotion](#Promotion)\
 &nbsp;&nbsp;&nbsp;&nbsp;[Checkmate](#Checkmate)\
