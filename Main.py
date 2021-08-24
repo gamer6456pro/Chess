@@ -211,16 +211,16 @@ class Game():
                     return 'wrongturn'
                 pygame.draw.rect(window,HighlightColor,(startx*100,starty*100,100,100))
                 ValidMoves=PieceDict[Board[starty][startx][1]]
+                ValidMoves[:]=[x for x in ValidMoves if ValidMoves[-1]=='EnPassant' or ValidMoves[-1]=='castle' or Board[int(x[0])][int(x[1])][0]!=Turn]
                 try:
                     length=len(ValidMoves) if ValidMoves[-1]!='EnPassant' and ValidMoves[-1]!='castle' else len(ValidMoves)-1
                     for x,y in ValidMoves[:length]:
                         x,y=int(x),int(y)
                         pygame.draw.rect(window,PossibleMoveColor,(y*100,x*100,100,100))
-                except IndexError:
-                    pass
+                except Exception as e:
+                    print(e)
                 self.DrawPiece()
                 pygame.display.update()
-                ValidMoves[:]=[x for x in ValidMoves if Board[int(x[0])][int(x[1])][0]!=Turn]
             except Exception as e:
                 print(e)
                 continue
