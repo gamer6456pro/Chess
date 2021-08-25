@@ -527,7 +527,7 @@ class Piece():
                 x=self.coords[1]
                 x+=i
                 try:
-                    if -1<self.coords[1]+x<8 and self.coords[0]-1>-1 and board[self.coords[0]-1][x]!=' ':
+                    if -1<x<8 and self.coords[0]-1>-1 and board[self.coords[0]-1][x]!=' ':
                         Move=str(self.coords[0]-1)+str(x)
                         PossibleMoves.append(Move)
                 except:
@@ -554,7 +554,7 @@ class Piece():
                 x=self.coords[1]
                 x+=i
                 try:
-                    if -1<self.coords[1]+x<8 and self.coords[0]+1<8 and board[self.coords[0]+1][x]!=' ':
+                    if -1<x<8 and self.coords[0]+1<8 and board[self.coords[0]+1][x]!=' ':
                         Move=str(self.coords[0]+1)+str(x)
                         PossibleMoves.append(Move)
                 except:
