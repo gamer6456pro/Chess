@@ -357,6 +357,8 @@ class Game():
         IsCheck=False
         isCheckMate=False
         CopyOfBoard=copy.deepcopy(Board)
+        checklist=[]
+        checklistappendele=None
         BoardCheck=Piece(Turn,(0,0)) #an object just to check if current pos is in check
         for i,x in enumerate(CopyOfBoard):
             for j,y in enumerate(x):
@@ -374,26 +376,34 @@ class Game():
                 for j,y in enumerate(x):
                     if y[0]==Turn:
                         ThePiece=Piece(Turn,(i,j))
-                        pieceDict={'n':ThePiece.knights(board=CopyOfBoard),'b':ThePiece.bishop(board=CopyOfBoard),
-                        'q':ThePiece.queen(board=CopyOfBoard),'p':ThePiece.pawns(board=CopyOfBoard),
-                        'r':ThePiece.rook(board=CopyOfBoard),'k':ThePiece.king(board=CopyOfBoard)}
+                        pieceDict={'n':ThePiece.knights(board=CopyOfBoard,captureSameColor=True),'b':ThePiece.bishop(board=CopyOfBoard,captureSameColor=True),
+                        'q':ThePiece.queen(board=CopyOfBoard,captureSameColor=True),'p':ThePiece.pawns(board=CopyOfBoard,captureSameColor=True),
+                        'r':ThePiece.rook(board=CopyOfBoard,captureSameColor=True),'k':ThePiece.king(board=CopyOfBoard,captureSameColor=True)}
                         for z in pieceDict[y[1]]:
+                            checklist.append(checklistappendele)
+                            PieceAtOrginalCoords=CopyOfBoard[int(z[0])][int(z[1])]
                             CopyOfBoard[int(z[0])][int(z[1])]=y
                             CopyOfBoard[i][j]=' '
-                            for i,x in enumerate(CopyOfBoard):
-                                for j,y in enumerate(x):
-                                    if y=='bk':
-                                        BlackKingCoords=str(i)+str(j)
-                                        break
-                                    elif y=='wk':
-                                        WhiteKingCoords=str(i)+str(j)
+                            for k,a in enumerate(CopyOfBoard):
+                                for l,b in enumerate(a):
+                                    if b=='bk':
+                                        BlackKingCoords=str(k)+str(l)
+                                    if b=='wk':
+                                        WhiteKingCoords=str(k)+str(l)
                             KingCoords={'b':BlackKingCoords,'w':WhiteKingCoords}
                             for Enemy in EnemyGenerator(CopyOfBoard):
                                 if ThePiece.check(Enemy,CopyOfBoard,KingCoords):
-                                    isCheckMate=True
-                                CopyOfBoard[int(z[0])][int(z[1])]=' '
-                                CopyOfBoard[i][j]=y
-            return isCheckMate
+                                    checklistappendele=True
+                                    break
+                                else:
+                                    checklistappendele=False
+                            CopyOfBoard[int(z[0])][int(z[1])]=PieceAtOrginalCoords
+                            CopyOfBoard[i][j]=y
+            if all(checklist[1:]):    
+                isCheckMate=True            
+                return isCheckMate
+            else:
+                return isCheckMate
 
     def inSufficientMaterial(self):
         BlackSufficientDict={'bb':0,'bn':0}
